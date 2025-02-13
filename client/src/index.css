@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.NavbarComponent{
+  background: linear-gradient(to right, #FE7568, #F88849);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 12px;
+  align-items: center;
+  
+}
+
+.icon_Text{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+
+.icon_Text .icontext{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.optionsComponent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.optionsComponent .optionType{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.optionsComponent .optionType img{
+  width: 40px;
+}
+
+.optionsComponent .optionType span{
+  font-size: 14px;
+  text-align: center;
+}
+
+.OptionAction1Component{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 6px;
+  padding: 6px;
+  background-color: #ffffff;
+}
+
+.OptionAction1Component .optionActionType{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 6px;
+box-shadow: 0px 0px 4px rgb(177, 177, 177);
+gap: 4px;
+cursor: pointer;
+}
+
+.OptionAction1Component .optionActionType img{
+width: 30px;
+}
+
+.OptionAction1Component .optionActionType span{
+  font-size: 12px;
+  color: #FE7568;
+  font-weight: 600;
+}
+
+.normalbookingComponent{
+  display: grid;
+  grid-template-columns: auto;  
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgb(177, 177, 177);
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.normalbookingComponent .title{
+  background:  linear-gradient(to right, #FE7568, #F88849);
+  padding: 8px 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.normalbookingComponent .bookingProcess{
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  place-items: center;
+}
+
+.normalbookingComponent .bookingProcess .paperless{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 12px;
+
+}
+
+.normalbookingComponent .bookingProcess .paperless .paperless_title{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  gap: 4px;
+}
+
+.normalbookingComponent .bookingProcess .paperless .setStart{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  gap: 6px;
+  font-size: 13px;
+  align-items: center;
+  border-bottom: 1px solid #F88849;
+}
+
+.normalbookingComponent .bookingProcess .paperless .setStart .start_name{
+font-size: 20px;
+}
+
+.normalbookingComponent .bookingProcess .paperless .next_trains button{
+  padding: 12px 32px;
+  background-color: #F88849;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 170px;
+}
