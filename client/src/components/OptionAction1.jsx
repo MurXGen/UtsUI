@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Oa1 from '../assets/Icons/Oa1.svg'
 import Oa2 from '../assets/Icons/Oa2.svg'
 import Oa3 from '../assets/Icons/Oa3.svg'
@@ -9,6 +10,8 @@ import '../index.css'
 
 
 const OptionAction1 = () => {
+
+  const navigate = useNavigate();
   return (
     <div className='OptionAction1Component'>
       <div className="optionActionType">
@@ -21,7 +24,7 @@ const OptionAction1 = () => {
         <span>BOOKING HISTORY</span>
       </div>
 
-      <div className="optionActionType">
+      <div className="optionActionType" onClick={() => navigate('/show-history')}>
         <img src={Oa3} alt="" />
         <span>SHOW TICKET</span>
       </div>
