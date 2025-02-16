@@ -1,33 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.dashboard{
+.dashboard {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.NavbarComponent{
+.NavbarComponent {
   background: linear-gradient(to right, #FE7568, #F88849);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 12px;
   align-items: center;
-  
+
 }
 
-.icon_Text{
+.icon_Text {
   display: flex;
   flex-direction: row;
   gap: 6px;
   align-items: center;
 }
 
-.icon_Text .icontext{
+.icon_Text .icontext {
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -35,13 +35,13 @@
   font-weight: 500;
 }
 
-.optionsComponent{
+.optionsComponent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.optionsComponent .optionType{
+.optionsComponent .optionType {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,16 +50,16 @@
   cursor: pointer;
 }
 
-.optionsComponent .optionType img{
+.optionsComponent .optionType img {
   width: 40px;
 }
 
-.optionsComponent .optionType span{
+.optionsComponent .optionType span {
   font-size: 14px;
   text-align: center;
 }
 
-.OptionAction1Component{
+.OptionAction1Component {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 6px;
@@ -67,38 +67,38 @@
   background-color: #ffffff;
 }
 
-.OptionAction1Component .optionActionType{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 6px;
-box-shadow: 0px 0px 4px rgb(177, 177, 177);
-gap: 4px;
-cursor: pointer;
+.OptionAction1Component .optionActionType {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-shadow: 0px 0px 4px rgb(177, 177, 177);
+  gap: 4px;
+  cursor: pointer;
 }
 
-.OptionAction1Component .optionActionType img{
-width: 30px;
+.OptionAction1Component .optionActionType img {
+  width: 30px;
 }
 
-.OptionAction1Component .optionActionType span{
+.OptionAction1Component .optionActionType span {
   font-size: 12px;
   color: #FE7568;
   font-weight: 600;
 }
 
-.normalbookingComponent{
+.normalbookingComponent {
   display: grid;
-  grid-template-columns: auto;  
+  grid-template-columns: auto;
   background-color: #fff;
   box-shadow: 0px 0px 4px rgb(177, 177, 177);
   margin: 12px;
   border-radius: 4px;
 }
 
-.normalbookingComponent .title{
-  background:  linear-gradient(to right, #FE7568, #F88849);
+.normalbookingComponent .title {
+  background: linear-gradient(to right, #FE7568, #F88849);
   padding: 8px 6px;
   color: #fff;
   font-weight: 500;
@@ -106,13 +106,13 @@ width: 30px;
   border-radius: 4px;
 }
 
-.normalbookingComponent .bookingProcess{
+.normalbookingComponent .bookingProcess {
   display: grid;
   grid-template-columns: 45% 10% 45%;
   place-items: center;
 }
 
-.normalbookingComponent .bookingProcess .paperless{
+.normalbookingComponent .bookingProcess .paperless {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -122,14 +122,14 @@ width: 30px;
 
 }
 
-.normalbookingComponent .bookingProcess .paperless .paperless_title{
+.normalbookingComponent .bookingProcess .paperless .paperless_title {
   display: flex;
   justify-content: center;
   font-size: 12px;
   gap: 4px;
 }
 
-.normalbookingComponent .bookingProcess .paperless .setStart{
+.normalbookingComponent .bookingProcess .paperless .setStart {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -141,11 +141,11 @@ width: 30px;
   border-bottom: 1px solid #F88849;
 }
 
-.normalbookingComponent .bookingProcess .paperless .setStart .start_name{
-font-size: 20px;
+.normalbookingComponent .bookingProcess .paperless .setStart .start_name {
+  font-size: 20px;
 }
 
-.normalbookingComponent .bookingProcess .paperless .next_trains button{
+.normalbookingComponent .bookingProcess .paperless .next_trains button {
   padding: 12px 32px;
   background-color: #F88849;
   border: 0;
@@ -158,45 +158,56 @@ font-size: 20px;
 }
 
 
-.normalbookingComponent .note{
+.normalbookingComponent .note {
   font-weight: 600;
-    text-decoration: underline;
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-    color: #138808;
-    padding: 18px;
-}
-
-.bottommsg{
+  text-decoration: underline;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   font-size: 12px;
-  position: relative;
-  bottom: 10px;
+  color: #138808;
+  padding: 18px;
 }
 
-.bottommsg > img{
-  position: relative;
-    right: -169px;
-  width: 100px;
+.bottommsg {
+    /* display: flex
+; */
+    /* flex-direction: column; */
+    /* align-items: flex-end; */
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    /* margin: auto; */
+    flex-wrap: nowrap;
+    /* left: 80px; */
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
-.bottommsg > .cris{
+.bottommsg>img {
+position: absolute;
+right: 1px;
+bottom: 25px;
+}
+
+.bottommsg>.cris {
   display: grid;
   grid-template-columns: auto;
   place-items: center;
   justify-content: center;
 }
 
-.bottommsg > .cris > .version{
-  margin-bottom: -12px;
+.bottommsg>.cris>.version {
+}
+
+.bottommsg> .cris> .fullform {
+  display: flex;
+  align-items: center;
 }
 
 
 
-.back_navbar{
+.back_navbar {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -206,10 +217,11 @@ font-size: 20px;
   font-size: 14px;
 }
 
-.showTicketSection .showTicketTitle{
+.showTicketSection .showTicketTitle {
   display: flex;
   font-size: 14px;
-  background: linear-gradient(to right, #FE7568, #F88849);;
+  background: linear-gradient(to right, #FE7568, #F88849);
+  ;
   margin: 12px;
   padding: 8px;
   align-items: center;
@@ -218,27 +230,28 @@ font-size: 20px;
   border-radius: 6px;
 }
 
-.ticketboxes .ticketbox{
+.ticketboxes .ticketbox {
   background-color: #fff;
   box-shadow: 0px 0px 3px grey;
   margin: 12px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-
+  padding: 6px;
 }
 
-.journeyTitle{
-display: flex;
-justify-content: space-between;
-background: linear-gradient(to right, #FE7568, #F88849);
-font-weight: 600;
-font-size: 13px;
-color: #fff;
+.journeyTitle {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #FE7568, #F88849);
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 6px;
 }
 
-.journeyTitle span{
-  border: 1px solid rgb(255, 255, 255) ;
+.journeyTitle span {
+  border: 1px solid rgb(255, 255, 255);
   padding: 4px 8px;
   width: 100%;
   display: flex;
@@ -246,55 +259,90 @@ color: #fff;
   gap: 4px;
 }
 
-.journeyTitle .fare{
+.journeyTitle .fare {
   display: flex;
   justify-content: end;
 
 }
 
-.journeyTitle .fare > strong{
+.journeyTitle .fare>strong {
   color: #282828;
   font-size: 20px;
 
 }
 
-.journeyName{
+.journeyName {
   display: flex;
   justify-content: space-between;
 }
 
-.journeyName .journeySource{
+.journeyName .journeySource {
   display: flex;
   width: 100%;
   border: 1px solid #fff;
-  padding: 6px;
+  padding: 12px;
   gap: 6px;
   font-size: 12px;
   align-items: center;
 }
 
-.viewTicket{
+.viewTicket {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
   padding: 12px;
 }
 
-.viewTicket img{
-width: 25px;
+.viewTicket img {
+  width: 25px;
 }
 
-.viewTicket .view img{
+.viewTicket .view img {
   width: 32px;
-  }
+}
 
-.viewTicket div{
+.viewTicket div {
   display: flex;
-  gap:4px;
+  gap: 4px;
   align-items: center;
 }
 
-.viewTicket div span{
+.viewTicket div span {
   color: #F88849;
   font-weight: 600;
+}
+
+.journeyDetails{
+  padding: 0 6px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.journeyDetails .via{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 6px 0;
+}
+
+.journeyDetails .via .route{
+color: #d41503;
+font-weight: 500;
+}
+
+.journeyDetails .trainDetails1 , .trainDeatils2{
+display: flex;
+padding: 6px 0;
+justify-content: space-between;
+border-top: 1px solid white;
+border-bottom: 1px solid white;
+
+}
+
+.journeyDetails .trainDetails1 .person{
+display: flex;
+justify-content: start;
+flex-direction: row;
+gap: 4px;
 }

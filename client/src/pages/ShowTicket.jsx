@@ -37,15 +37,28 @@ const ShowTicket = () => {
               </div>
             </div>
             <div className="journeyDetails">
-              <div className="via"></div>
+              <div className="via"><span>Via : <span className='route'>1RT>>MM-DDR-DR-CLA</span></span></div>
               <div className="trainDetails1">
-                <div className="person"></div>
-                <div className="class"></div>
-                <div className="trainType"></div>
+                <div className="person">
+                  <span>ADULT: <span className='personColor'>1</span></span>
+                  <span>CHILD: <span className='personColor'>0</span></span>
+                </div>
+                <div className="class">
+                  <span>FIRST (FC)</span>
+                </div>
+                <div className="trainType">
+                  <span>AC EMU</span>
+                </div>
               </div>
               <div className="trainDeatils2">
-                <div className="bookingdetail"></div>
-                <div className="utsid"></div>
+                <div className="bookingdetail">
+                  <span>BOOKING DATE: <span className='dateColor'>13/01/2025  12:45</span></span>
+                </div>
+                <div className="utsid">
+                  <span>
+                  UTS NO: <span className='idColor'>XOSDMOMS</span>
+                  </span>
+                </div>
               </div>
             </div>
             <div className="viewTicket">
