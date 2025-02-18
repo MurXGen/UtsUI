@@ -44,7 +44,7 @@ const Ticket = () => {
 
           <span>CLASS : <span style={{ fontWeight: 600, color: '#DD2C00' }}>प्रथम/FIRST</span></span>
           <span>TRAIN : <span style={{ fontWeight: 600, color: '#DD2C00' }}>एसी ईएमयू/AC EMU</span></span>
-          <span style={{borderTop:'1px solid grey' , width:'450px'}}>Via : ---</span>
+          <span style={{borderTop:'1px solid grey' , width:'450px'}}>Via : 1RT>>MM-DDR-DR-CLA</span>
 
         </div>
         <div className="ticketNumbers">
