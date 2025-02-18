@@ -4,8 +4,10 @@ import source from '../assets/Icons/source.svg'
 import destination from '../assets/Icons/destination.svg'
 import viewticket from '../assets/Icons/viewticket.svg'
 import nexttrain from '../assets/Icons/nexttrain.svg'
+import { useNavigate } from 'react-router-dom'
 
 const ShowTicket = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="back_navbar">
@@ -62,7 +64,7 @@ const ShowTicket = () => {
               </div>
             </div>
             <div className="viewTicket">
-            <div className='view'>
+            <div className='view' onClick={() => navigate('/ticket')}>
                 <img src={viewticket} alt="" />
                 <span>VIEW TICKET</span>
               </div>
