@@ -26,7 +26,7 @@ const ShowTicket = () => {
           <div className="ticketbox">
             <div className="journeyTitle">
               <span>SEASON (M-TICKET)</span>
-              <span className='fare'>FARE: <strong>₹</strong>1380.00</span>
+              <span className='fare'>FARE: <strong>₹</strong>1810.66</span>
             </div>
             <div className="journeyName">
               <div className="journeySource">
