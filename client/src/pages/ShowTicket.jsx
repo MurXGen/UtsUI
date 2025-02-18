@@ -47,12 +47,12 @@ const ShowTicket = () => {
                   <span>FIRST (FC)</span>
                 </div>
                 <div className="trainType">
-                  <span>AC EMU</span>
+                  <span>AC EMU TRAIN (U)</span>
                 </div>
               </div>
               <div className="trainDeatils2">
                 <div className="bookingdetail">
-                  <span>BOOKING DATE: <span className='dateColor'>13/01/2025  12:45</span></span>
+                  <span>BOOKING DATE: <span className='dateColor'>17/02/2025  12:45</span></span>
                 </div>
                 <div className="utsid">
                   <span>

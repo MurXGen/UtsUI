@@ -169,25 +169,25 @@
 }
 
 .bottommsg {
-    /* display: flex
+  /* display: flex
 ; */
-    /* flex-direction: column; */
-    /* align-items: flex-end; */
-    font-size: 12px;
-    position: absolute;
-    bottom: 10px;
-    /* margin: auto; */
-    flex-wrap: nowrap;
-    /* left: 80px; */
-    width: 100%;
-    text-align: center;
-    margin: auto;
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  /* margin: auto; */
+  flex-wrap: nowrap;
+  /* left: 80px; */
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 .bottommsg>img {
-position: absolute;
-right: 1px;
-bottom: 25px;
+  position: absolute;
+  right: 1px;
+  bottom: 25px;
 }
 
 .bottommsg>.cris {
@@ -197,10 +197,9 @@ bottom: 25px;
   justify-content: center;
 }
 
-.bottommsg>.cris>.version {
-}
+.bottommsg>.cris>.version {}
 
-.bottommsg> .cris> .fullform {
+.bottommsg>.cris>.fullform {
   display: flex;
   align-items: center;
 }
@@ -212,9 +211,10 @@ bottom: 25px;
   align-items: center;
   gap: 6px;
   background: linear-gradient(to right, #FE7568, #F88849);
-  padding: 12px;
+  padding: 16px;
   color: #fff;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .showTicketSection .showTicketTitle {
@@ -222,7 +222,7 @@ bottom: 25px;
   font-size: 14px;
   background: linear-gradient(to right, #FE7568, #F88849);
   ;
-  margin: 12px;
+  margin: 16px;
   padding: 8px;
   align-items: center;
   color: #fff;
@@ -231,9 +231,12 @@ bottom: 25px;
 }
 
 .ticketboxes .ticketbox {
-  background-color: #fff;
-  box-shadow: 0px 0px 3px grey;
-  margin: 12px;
+  background-image: url('./assets/Icons/Booked.png');
+  background-position: center;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 5px rgb(182, 182, 182);
+  margin: 16px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -291,6 +294,7 @@ bottom: 25px;
   justify-content: space-between;
   font-size: 12px;
   padding: 12px;
+  cursor: pointer;
 }
 
 .viewTicket img {
@@ -312,7 +316,7 @@ bottom: 25px;
   font-weight: 600;
 }
 
-.journeyDetails{
+.journeyDetails {
   padding: 0 6px;
   display: flex;
   flex-direction: column;
@@ -320,29 +324,188 @@ bottom: 25px;
   gap: 8px;
 }
 
-.journeyDetails .via{
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+.journeyDetails .via {
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
   padding: 6px 0;
 }
 
-.journeyDetails .via .route{
-color: #d41503;
-font-weight: 500;
+.journeyDetails .via .route {
+  color: #d41503;
+  font-weight: 500;
 }
 
-.journeyDetails .trainDetails1 , .trainDeatils2{
-display: flex;
-padding: 6px 0;
-justify-content: space-between;
-border-top: 1px solid white;
-border-bottom: 1px solid white;
+.journeyDetails .trainDetails1,
+.trainDeatils2 {
+  display: flex;
+  padding: 6px 0;
+  justify-content: space-between;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
 
 }
 
-.journeyDetails .trainDetails1 .person{
+.journeyDetails .trainDetails1{
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+}
+
+.journeyDetails .trainDetails1 .person {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.person span .personColor{
+  color: #DD2C00;
+}
+
+.bookingdetail .dateColor{
+  color: #DD2C00;
+}
+
+.utsid span > .idColor{
+  color: #DD2C00;
+
+}
+
+
+.tikcetTopBar{
+padding: 12px;
 display: flex;
-justify-content: start;
-flex-direction: row;
-gap: 4px;
+align-items: center;
+color: 05006B;
+font-weight: 600;
+}
+
+.tikcetTopBar img{
+  width: 30px;
+  position: absolute;
+  
+}
+
+.tikcetTopBar img{
+  position: relative;
+}
+
+
+
+.ticketUi{
+  display: flex;
+  flex-direction: column;
+  background-color: #5ED6EE;
+  margin: 12px;
+  padding: 12px;
+  box-shadow: 0px 1px 5px grey;
+  border-radius: 4px;
+}
+
+.welcome{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 6px;
+}
+
+.welcome > span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  font-weight: 600;
+}
+
+.welcome > .quarterly{
+  background-color: #e45be2;
+}
+
+.ticketId{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: px;
+  gap: 6px;
+  font-size: 14px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 6px;
+}
+
+.ticketUser{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 6px;
+  padding-top: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid grey;
+}
+
+.between{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  padding: 6px 0px;
+  font-size: 13px;
+}
+
+.between .betweenSource , .betweenDest{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.between .betweenSource .sourceImg,.destImg{
+  background-color: #4B0E4A;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+.ticketNumbers{
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: 30% 70%;
+  gap: 6px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.ticketNumbers1{
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: 70% 30%;
+  gap: 6px;
+  padding-top: 6px;
+  border-top: 1px solid grey;
+}
+
+.warning{
+  margin: 0 12px;
+  margin-top: -10px;
+  background-color: #fff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #F88849;
+  text-align: center;
+  box-shadow: 0px 1px 5px grey;
+  padding: 12px 0;
+}
+.proceed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.proceed button{
+
+  border: 0;
+  padding: 12px;
+  color: #fff;
+  background-color: #2C79FB;
+  width: 50%;
+  border-radius: 12px;
 }
