@@ -32,7 +32,7 @@ const Ticket = () => {
           <div className="between">
             <div className="betweenSource">
               <span className='sourceImg'>S</span>
-              <span>विद्याविहार / VIDYAVIHAR / विद्याविहार</span>
+              <span>घाटकोपर / GHATKOPAR / घाटकोपर</span>
             </div>
 
             <div className="betweenDest">

@@ -8,7 +8,7 @@ const NormalBooking = () => {
       <div className="bookingProcess">
         <div className="paperless">
             <div className="paperless_title">
-                <span style={{ fontSize:'16px' }}>O</span>
+                <span>O</span>
                 <span>Book & Travel (Paperless)</span>
             </div>
             <div className="setStart">
@@ -25,7 +25,7 @@ const NormalBooking = () => {
         </div>
         <div className="paperless">
             <div className="paperless_title">
-                <span style={{ fontSize:'16px' }}>O</span>
+                <span>O</span>
                 <span>Book & Travel (Paperless)</span>
             </div>
             <div className="setStart">

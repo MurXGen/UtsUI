@@ -31,7 +31,7 @@ const ShowTicket = () => {
             <div className="journeyName">
               <div className="journeySource">
                 <img src={source} alt="" />
-                <span>VIDYAVIHAR</span>
+                <span>GHATKOPAR</span>
               </div>
               <div className="journeySource">
                 <img src={destination} alt="" />
