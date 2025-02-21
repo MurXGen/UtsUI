@@ -27,7 +27,7 @@ const Ticket = () => {
           <span style={{ fontWeight: 600 }}>ID CARD NUMBER : <span style={{ color: '#DD2C00' }}>672001088287</span></span>
         </div>
         <div className='ticketUser'>
-          <span style={{ fontWeight: 600 }}>Pass : <span style={{ fontWeight: 600, color: '#DD2C00' }}>Mr. Murthy Thvar</span></span><span></span>
+          <span style={{ fontWeight: 600 }}>Pass : <span style={{ fontWeight: 600, color: '#DD2C00' }}>Mr. Murthy Thevar</span></span><span></span>
           <span style={{ fontWeight: 600 }}>Age: <span style={{ fontWeight: 600, color: '#DD2C00' }}>21 years</span></span><span></span>
           <div className="between">
             <div className="betweenSource">
@@ -44,7 +44,7 @@ const Ticket = () => {
 
           <span>CLASS : <span style={{ fontWeight: 600, color: '#DD2C00' }}>प्रथम/FIRST</span></span>
           <span>TRAIN : <span style={{ fontWeight: 600, color: '#DD2C00' }}>एसी ईएमयू/AC EMU</span></span>
-          <span style={{borderTop:'1px solid grey' , width:'450px'}}>Via : 1RT>>MM-DDR-DR-CLA</span>
+          <span style={{paddingBottom:'6px'}}>Via : 1RT>>MM-DDR-DR-CLA</span>
 
         </div>
         <div className="ticketNumbers">
