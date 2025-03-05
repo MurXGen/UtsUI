@@ -8,8 +8,9 @@ import { useNavigate } from 'react-router-dom'
 
 const ShowTicket = () => {
   const navigate = useNavigate();
-  const fromSource = "MAHIM";
-  const toDest = "MIRA ROAD"
+  const fromSource = "GHATKOPAR";
+  const toDest = "GOREGOAN";
+  const RouteVia = "Via : 1RT>>MM-DDR-DR-CLA";
   return (
     <div>
       <div className="back_navbar">
@@ -41,7 +42,7 @@ const ShowTicket = () => {
               </div>
             </div>
             <div className="journeyDetails">
-              <div className="via"><span>Via : <span className='route'>1RT>>---</span></span></div>
+              <div className="via"><span>Via : <span className='route'>{RouteVia}</span></span></div>
               <div className="trainDetails1">
                 <div className="person">
                   <span>ADULT: <span className='personColor'>1</span></span>

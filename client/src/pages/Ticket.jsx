@@ -4,13 +4,13 @@ import cris from '../assets/Icons/cris.svg'
 import icon from '../assets/Icons/icon.svg'
 
 const Ticket = () => {
-  const TravelName = "Mariappan Thevar";
+  const TravelName = "Murthy Thevar";
   const TravelAge = "28";
-  const fromSource = "माहिम / MAHIM / माहीम";
-  const toDest = "मीरा रोड / MIRA ROAD / मीरा रोड";
-  const RouteVia = "Via : 1RT>>----";
+  const fromSource = "घाटकोपर / GHATKOPAR / घाटकोपर";
+  const toDest = "गोरेगांव / GOREGAON / गोरेगाव";
+  const RouteVia = "Via : 1RT>>MM-DDR-DR-CLA";
   const fromDate = "17/02/2025";
-  const idDetails = '678306062917';
+  const idDetails = '672001088287';
   return (
     <div>
       <div className="tikcetTopBar">
