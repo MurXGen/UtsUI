@@ -6,8 +6,8 @@ import icon from '../assets/Icons/icon.svg'
 const Ticket = () => {
   const TravelName = "Mariappan Thevar";
   const TravelAge = "28";
-  const fromSource = "घाटकोपर / MAHIM / घाटकोपर";
-  const toDest = "घाटकोपर / MIRA ROAD / घाटकोपर";
+  const fromSource = "माहिम / MAHIM / माहीम";
+  const toDest = "मीरा रोड / MIRA ROAD / मीरा रोड";
   return (
     <div>
       <div className="tikcetTopBar">
@@ -48,7 +48,7 @@ const Ticket = () => {
 
           <span>CLASS : <span style={{ fontWeight: 600, color: '#DD2C00' }}>प्रथम/FIRST</span></span>
           <span>TRAIN : <span style={{ fontWeight: 600, color: '#DD2C00' }}>एसी ईएमयू/AC EMU</span></span>
-          <span style={{paddingBottom:'6px'}}>Via : 1RT>>MM-DDR-DR-CLA</span>
+          <span style={{paddingBottom:'6px'}}>Via : 1RT>>----</span>
 
         </div>
         <div className="ticketNumbers">
