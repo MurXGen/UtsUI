@@ -15,7 +15,7 @@ const Ticket = () => {
     <div>
       <div className="tikcetTopBar">
         <img src={cris} alt="" />
-        <marquee style={{fontSize:'16px',color:"#05006B"}}>IR Unreserved Ticketing</marquee>
+        <marquee style={{fontSize:'24px',color:"#05006B"}}>IR Unreserved Ticketing</marquee>
         <img src={icon} className='icon' alt="" />
       </div>
 
