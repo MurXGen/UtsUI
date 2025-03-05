@@ -5,7 +5,7 @@ import icon from '../assets/Icons/icon.svg'
 
 const Ticket = () => {
   const TravelName = "Murthy Thevar";
-  const TravelAge = "28";
+  const TravelAge = "21";
   const fromSource = "घाटकोपर / GHATKOPAR / घाटकोपर";
   const toDest = "गोरेगांव / GOREGAON / गोरेगाव";
   const RouteVia = "Via : 1RT>>MM-DDR-DR-CLA";
