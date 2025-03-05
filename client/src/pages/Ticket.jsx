@@ -8,6 +8,9 @@ const Ticket = () => {
   const TravelAge = "28";
   const fromSource = "माहिम / MAHIM / माहीम";
   const toDest = "मीरा रोड / MIRA ROAD / मीरा रोड";
+  const RouteVia = "Via : 1RT>>----";
+  const fromDate = "17/02/2025";
+  const idDetails = '678306062917';
   return (
     <div>
       <div className="tikcetTopBar">
@@ -23,12 +26,12 @@ const Ticket = () => {
         </div>
         <div className="ticketId">
           <span style={{ fontWeight: 600 }}>ADULT SEASON</span>
-          <span style={{ fontWeight: 600 }}> 17/02/2025</span>
+          <span style={{ fontWeight: 600 }}>{fromDate}</span>
           <span>Rs. 1810.66 /-</span>
           <span>7977960242</span>
           <span>UTS NO : X20SDS7806</span>
           <span style={{ fontWeight: 600, color: '#DD2C00' }}>MONTHLY</span>
-          <span style={{ fontWeight: 600 }}>ID CARD NUMBER : <span style={{ color: '#DD2C00' }}>672001088287</span></span>
+          <span style={{ fontWeight: 600 }}>ID CARD NUMBER : <span style={{ color: '#DD2C00' }}>{idDetails}</span></span>
         </div>
         <div className='ticketUser'>
           <span style={{ fontWeight: 600 }}>Pass : <span style={{ fontWeight: 600, color: '#DD2C00' }}>Mr. {TravelName}</span></span><span></span>
@@ -48,7 +51,7 @@ const Ticket = () => {
 
           <span>CLASS : <span style={{ fontWeight: 600, color: '#DD2C00' }}>प्रथम/FIRST</span></span>
           <span>TRAIN : <span style={{ fontWeight: 600, color: '#DD2C00' }}>एसी ईएमयू/AC EMU</span></span>
-          <span style={{paddingBottom:'6px'}}>Via : 1RT>>----</span>
+          <span style={{paddingBottom:'6px'}}>{RouteVia}</span>
 
         </div>
         <div className="ticketNumbers">
