@@ -4,6 +4,10 @@ import cris from '../assets/Icons/cris.svg'
 import icon from '../assets/Icons/icon.svg'
 
 const Ticket = () => {
+  const TravelName = "Mariappan Thevar";
+  const TravelAge = "28";
+  const fromSource = "घाटकोपर / MAHIM / घाटकोपर";
+  const toDest = "घाटकोपर / MIRA ROAD / घाटकोपर";
   return (
     <div>
       <div className="tikcetTopBar">
@@ -27,17 +31,17 @@ const Ticket = () => {
           <span style={{ fontWeight: 600 }}>ID CARD NUMBER : <span style={{ color: '#DD2C00' }}>672001088287</span></span>
         </div>
         <div className='ticketUser'>
-          <span style={{ fontWeight: 600 }}>Pass : <span style={{ fontWeight: 600, color: '#DD2C00' }}>Mr. Murthy Thevar</span></span><span></span>
-          <span style={{ fontWeight: 600 }}>Age: <span style={{ fontWeight: 600, color: '#DD2C00' }}>21 years</span></span><span></span>
+          <span style={{ fontWeight: 600 }}>Pass : <span style={{ fontWeight: 600, color: '#DD2C00' }}>Mr. {TravelName}</span></span><span></span>
+          <span style={{ fontWeight: 600 }}>Age: <span style={{ fontWeight: 600, color: '#DD2C00' }}>{TravelAge}</span></span><span></span>
           <div className="between">
             <div className="betweenSource">
               <span className='sourceImg'>S</span>
-              <span>घाटकोपर / GHATKOPAR / घाटकोपर</span>
+              <span>{fromSource}</span>
             </div>
 
             <div className="betweenDest">
             <span className='destImg'>D</span>
-              <span>गोरेगांव / GOREGAON / गोरेगाव</span>
+              <span>{toDest}</span>
             </div>
           </div>
           <span></span>

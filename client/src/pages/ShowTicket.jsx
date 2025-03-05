@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom'
 
 const ShowTicket = () => {
   const navigate = useNavigate();
+  const fromSource = "MAHIM";
+  const toDest = "MIRA ROAD"
   return (
     <div>
       <div className="back_navbar">
@@ -31,15 +33,15 @@ const ShowTicket = () => {
             <div className="journeyName">
               <div className="journeySource">
                 <img src={source} alt="" />
-                <span>GHATKOPAR</span>
+                <span>{fromSource}</span>
               </div>
               <div className="journeySource">
                 <img src={destination} alt="" />
-                <span>GOREGOAN</span>
+                <span>{toDest}</span>
               </div>
             </div>
             <div className="journeyDetails">
-              <div className="via"><span>Via : <span className='route'>1RT>>MM-DDR-DR-CLA</span></span></div>
+              <div className="via"><span>Via : <span className='route'>1RT>>---</span></span></div>
               <div className="trainDetails1">
                 <div className="person">
                   <span>ADULT: <span className='personColor'>1</span></span>
