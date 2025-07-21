@@ -404,7 +404,7 @@ font-weight: 600;
 .welcome{
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-bottom: 6px;
+  padding-bottom: 16px;
 }
 
 .welcome > span{
@@ -426,7 +426,7 @@ font-weight: 600;
   gap: 6px;
   font-size: 14px;
   border-bottom: 1px solid grey;
-  padding-bottom: 6px;
+  padding-bottom: 16px;
 }
 
 .ticketUser{
@@ -466,8 +466,8 @@ font-weight: 600;
   font-size: 14px;
   grid-template-columns: 30% 70%;
   gap: 6px;
-  padding-top: 12px;
-  padding-bottom: 6px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .ticketNumbers1{
@@ -508,4 +508,100 @@ font-weight: 600;
   background-color: #F88849;
   width: 50%;
   border-radius: 12px;
+}
+
+.editForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.editForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+.editForm input {
+  padding: 10px 12px;
+  margin-top: 6px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.editForm input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.editForm button {
+  grid-column: 1 / -1;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editForm button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .editForm {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editForm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.editForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+.editForm input {
+  margin-top: 6px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.editForm button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.editForm button:hover {
+  background-color: #0056b3;
 }
