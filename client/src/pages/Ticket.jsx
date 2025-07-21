@@ -75,7 +75,6 @@ const Ticket = () => {
     localStorage.setItem("_toDest", toDest);
     localStorage.setItem("idDetails", idDetails);
     localStorage.setItem("ticketPrice", `Rs. ${fareAmount} /-`);
-    localStorage.setItem("validFromDate", validFromDate);
     localStorage.setItem("validToDate", validToDate);
     localStorage.setItem("bookingDateTime", bookingDateTime);
 
