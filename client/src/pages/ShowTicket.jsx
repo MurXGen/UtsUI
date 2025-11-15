@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import showticket from "../assets/Icons/showticket.svg";
 import source from "../assets/Icons/source.svg";
 import destination from "../assets/Icons/destination.svg";
@@ -9,6 +9,35 @@ import { useNavigate } from "react-router-dom";
 const ShowTicket = () => {
   const navigate = useNavigate();
   const [isEditing, setIsEditing] = useState(false);
+  // Generate random PM time (12–23 hours)
+  const generateRandomPMTime = (date) => {
+    const d = new Date(date);
+    const randomHour = Math.floor(Math.random() * 12) + 12; // 12 PM–23 PM
+    const randomMinute = Math.floor(Math.random() * 60);
+    d.setHours(randomHour);
+    d.setMinutes(randomMinute);
+    return d;
+  };
+
+  useEffect(() => {
+    // Booking date = 15 days BEFORE today
+    const booking = new Date();
+    booking.setDate(booking.getDate() - 15);
+
+    const bookingFinal = generateRandomPMTime(booking);
+
+    // Convert to YYYY-MM-DDTHH:mm (because your input needs this)
+    const toInputFormat = (d) => {
+      const year = d.getFullYear();
+      const month = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      const hour = String(d.getHours()).padStart(2, "0");
+      const minute = String(d.getMinutes()).padStart(2, "0");
+      return `${year}-${month}-${day}T${hour}:${minute}`;
+    };
+
+    setBookingDate(toInputFormat(bookingFinal));
+  }, []);
 
   // Load from localStorage or set default values
   const [_fromSource, set_fromSource] = useState(

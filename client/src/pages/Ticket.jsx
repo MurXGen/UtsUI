@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../index.css";
 import cris from "../assets/Icons/cris.svg";
 import icon from "../assets/Icons/icon.svg";
@@ -16,6 +16,42 @@ const Ticket = () => {
 
     return `${day}/${month}/${year} ${hours}:${minutes}`;
   };
+  // Generate random PM time (12–23 hours)
+  const generateRandomPMTime = (date) => {
+    const d = new Date(date);
+    const randomHour = Math.floor(Math.random() * 12) + 12; // 12 PM to 23 PM
+    const randomMinute = Math.floor(Math.random() * 60);
+    d.setHours(randomHour);
+    d.setMinutes(randomMinute);
+    return d;
+  };
+
+  useEffect(() => {
+    const today = new Date();
+
+    // Booking date = 15 days BEFORE today
+    const bookingDate = new Date();
+    bookingDate.setDate(bookingDate.getDate() - 15);
+    const bookingWithTime = generateRandomPMTime(bookingDate);
+
+    // Valid To date = 15 days AFTER today
+    const validDate = new Date();
+    validDate.setDate(validDate.getDate() + 15);
+    const validWithTime = generateRandomPMTime(validDate);
+
+    // Format function
+    const format = (d) => {
+      const day = String(d.getDate()).padStart(2, "0");
+      const month = String(d.getMonth() + 1).padStart(2, "0");
+      const year = d.getFullYear();
+      const hours = String(d.getHours()).padStart(2, "0");
+      const minutes = String(d.getMinutes()).padStart(2, "0");
+      return `${day}/${month}/${year} ${hours}:${minutes}`;
+    };
+
+    setBookingDateTime(format(bookingWithTime)); // 15 days older date
+    setValidToDate(format(validWithTime)); // 15 days future end date
+  }, []);
 
   // Load all fields from localStorage or default values
   const [travelName, setTravelName] = useState(
